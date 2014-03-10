@@ -18,7 +18,7 @@ def triangle_typer
 end
 
 def add_triangle
-  puts "Please enter the lengths of all three sides."
+  puts "Please enter the lengths of all three sides. Letters will be converted to 0."
   @side_a = gets.chomp.to_i
   @side_b = gets.chomp.to_i
   @side_c = gets.chomp.to_i
@@ -34,6 +34,5 @@ def list_triangles
   @previous_triangles.each do |triangle|
     puts "Your previous triangles were #{triangle.type_of_triangle}!"
   end
-  triangle_typer
 end
 triangle_typer
